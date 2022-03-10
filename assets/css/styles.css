@@ -73,19 +73,19 @@ footer {
     justify-content: space-around;
 }
 
-footer ul {
+header ul, footer ul {
     overflow: hidden;
 }
 
-footer li {
+header li, footer li {
     float: left;
 }
 
-footer li:first-child {
+header li:first-child, footer li:first-child {
     list-style-type: none;
 }
 
-footer li:not(li:first-child) {
+header li:not(li:first-child), footer li:not(li:first-child) {
     margin-left: 23px;
 }
 
