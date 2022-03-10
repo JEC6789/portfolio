@@ -11,7 +11,7 @@
 }
 
 body {
-    background: var(--secondary-color);
+    background: var(--primary-color);
     color: var(--text-color);
     font-family: rubik, helvetica, arial, sans-serif;
 }
@@ -48,11 +48,11 @@ header {
     justify-content: space-between;
 }
 
-header h1, footer h1 {
+header h1, section h2, footer h2 {
     font-weight: normal;
 }
 
-header h1 {
+header h1, section h2 {
     font-size: 54px;
 }
 
@@ -70,7 +70,6 @@ header a, footer a {
 
 footer {
     border-top: 2px ridge var(--tertiary-color);
-    height: stretch;
     justify-content: space-around;
 }
 
@@ -92,9 +91,20 @@ footer li:not(li:first-child) {
 
 main {
     background-color: var(--primary-color);
-    min-height: calc(100vh - 148.8px);
-    text-align: center;
+    min-height: calc(100vh - 140px);
+    display: inline-table;
+}
+
+section {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+
+section h2 {
+    color: var(--tertiary-color);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 5px;
+    border-right: 2px solid var(--tertiary-color);
+    padding: 5px 10px;
 }
