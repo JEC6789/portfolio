@@ -98,13 +98,53 @@ main {
 section {
     display: flex;
     align-items: flex-start;
-    margin: 10px 0;
+    margin: 10px;
 }
 
 section h2 {
     color: var(--tertiary-color);
     font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap;
     margin: 5px;
     border-right: 2px solid var(--tertiary-color);
     padding: 5px 10px;
+}
+
+.infobox {
+    background: var(--secondary-color);
+    margin: 10px 10px 5px 5px;
+    border: 2px solid var(--tertiary-color);
+    border-radius: 5px;
+    padding: 2px;
+    width: 300px;
+    float: right;
+    clear: right;
+    flex-direction: column;
+    align-items: center;
+    color: var(--tertiary-color);
+}
+
+.infobox h3 {
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+}
+
+.infobox img {
+    max-width: 280px;
+    padding: 4px;
+}
+
+.infobox .rows {
+    font-size: 90%;
+    width: 100%;
+    text-align: left;
+}
+
+.infobox .rows tr:nth-child(even) {
+    background-color: var(--secondary-color);
+}
+
+.infobox .rows th, .infobox .rows td {
+    padding: 4px;
 }
