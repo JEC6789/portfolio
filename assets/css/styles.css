@@ -18,7 +18,6 @@ body {
 
 a {
     color: var(--tertiary-color);
-    text-decoration: none;
 }
 
 a:hover {
@@ -66,6 +65,7 @@ header h1 sub {
 
 header a, footer a {
     font-size: 20px;
+    text-decoration: none;
 }
 
 footer {
@@ -124,12 +124,6 @@ section h2 {
     color: var(--tertiary-color);
 }
 
-.infobox h3 {
-    padding: 5px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: normal;
-}
-
 .infobox img {
     max-width: 280px;
     padding: 4px;
@@ -142,9 +136,45 @@ section h2 {
 }
 
 .infobox .rows tr:nth-child(even) {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 .infobox .rows th, .infobox .rows td {
     padding: 4px;
+}
+
+.content {
+    font-size: 90%;
+    padding-left: 6px;
+}
+
+.content h3 {
+    color: var(--tertiary-color);
+    font-size: 20px;
+    font-weight: normal;
+    border-bottom: 1px solid var(--tertiary-color);
+    margin: 6px 0;
+}
+
+@media only screen and (max-width: 1039.9px) {
+    .infobox {
+        flex-direction: row;
+        float: none;
+        clear: none;
+        width: fit-content;
+        margin: 10px auto;
+    }
+
+    .infobox img {
+        padding-left: 8px;
+    }
+
+    .infobox tr {
+        display: inline-block;
+    }
+
+    .infobox th, .infobox td {
+        height: 150px;
+        vertical-align: middle;
+    }
 }
