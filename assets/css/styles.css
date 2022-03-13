@@ -43,6 +43,8 @@ header, footer {
 }
 
 header {
+    position: sticky;
+    top: 0;
     border-bottom: 2px ridge var(--tertiary-color);
     justify-content: space-between;
 }
@@ -107,12 +109,12 @@ section h2 {
     white-space: nowrap;
     margin: 5px;
     border-right: 2px solid var(--tertiary-color);
-    padding: 5px 10px;
+    padding: 5px 10px 5px 0;
 }
 
 .infobox {
     background: var(--secondary-color);
-    margin: 10px 10px 5px 5px;
+    margin: 10px;
     border: 2px solid var(--tertiary-color);
     border-radius: 5px;
     padding: 2px;
@@ -144,37 +146,150 @@ section h2 {
 }
 
 .content {
-    font-size: 90%;
     padding-left: 6px;
 }
 
 .content h3 {
     color: var(--tertiary-color);
-    font-size: 20px;
+    font-size: 24px;
     font-weight: normal;
     border-bottom: 1px solid var(--tertiary-color);
-    margin: 6px 0;
+    margin: 6px 0 10px 0;
+}
+
+.content p {
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.project-section {
+    padding-left: 3px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-section article {
+    margin: 10px 3px -36px 3px;
+}
+
+.project-section article:first-child {
+    margin-top: 6px;
+}
+
+.project-section article a {
+    text-decoration: none;
+}
+
+.project-section .light a {
+    color: var(--primary-color);
+}
+
+.project-section .dark a {
+    color: var(--text-color);
+}
+
+.project-section article img {
+    max-width: 400px;
+    min-width: 200px;
+    border: 2px solid var(--tertiary-color);
+    border-radius: 2px;
+}
+
+.project-section article img:first-child {
+    max-width: 100%;
+}
+
+.project-section article div {
+    position: relative;
+    left: 6px;
+    bottom: 36px;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    width: fit-content;
+}
+
+.project-section article div small {
+    font-size: 12px;
 }
 
 @media only screen and (max-width: 1039.9px) {
     .infobox {
-        flex-direction: row;
         float: none;
         clear: none;
-        width: fit-content;
         margin: 10px auto;
     }
+}
 
-    .infobox img {
-        padding-left: 8px;
+@media only screen and (max-width: 799.9px) {
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 767.9px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section h2 {
+        padding: 5px 0;
+        margin: 0 auto;
+        border-right: none;
+        border-bottom: 2px solid var(--tertiary-color);
+    }
+}
+
+@media only screen and (max-width: 599.9px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 519.9px) {
+    header ul, footer ul {
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header li:first-child, footer li:first-child {
+        list-style-type: disc;
+    }
+
+    header li:not(li:first-child), footer li:not(li:first-child) {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 323.9px) {
+    .infobox {
+        width: fit-content;
+        padding-top: 0;
     }
 
     .infobox tr {
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
     }
 
-    .infobox th, .infobox td {
-        height: 150px;
-        vertical-align: middle;
+    section {
+        margin: 10px 10px 10px 0;
+    }
+
+    section h2 {
+        font-size: 48px;
+    }
+
+    .project-section article {
+        margin-bottom: -32px;
+    }
+
+    .project-section article div {
+        font-size: 20px;
+        bottom: 32px;
     }
 }
