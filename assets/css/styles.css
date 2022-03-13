@@ -203,6 +203,7 @@ section h2 {
     position: relative;
     left: 6px;
     bottom: 36px;
+    height: 27.2px;
     font-size: 24px;
     font-weight: bold;
     font-style: italic;
@@ -291,5 +292,6 @@ section h2 {
     .project-section article div {
         font-size: 20px;
         bottom: 32px;
+        height: 23.2px;
     }
 }
