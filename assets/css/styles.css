@@ -163,7 +163,7 @@ section h2 {
 }
 
 .project-section {
-    padding-left: 3px;
+    padding-left: 0;
     display: flex;
     flex-wrap: wrap;
 }
