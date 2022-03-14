@@ -169,11 +169,7 @@ section h2 {
 }
 
 .project-section article {
-    margin: 10px 3px -36px 3px;
-}
-
-.project-section article:first-child {
-    margin-top: 6px;
+    margin: 5px 5px -31px 5px;
 }
 
 .project-section article a {
@@ -196,7 +192,8 @@ section h2 {
 }
 
 .project-section article img:first-child {
-    max-width: 100%;
+    width: 100%;
+    max-width: 914px;
 }
 
 .project-section article div {
