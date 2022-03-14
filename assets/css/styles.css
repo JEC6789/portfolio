@@ -162,6 +162,12 @@ section h2 {
     margin-bottom: 15px;
 }
 
+.hatnote {
+    font-style: italic;
+    padding-left: 10px;
+    margin-bottom: 8px;
+}
+
 .project-section {
     padding-left: 0;
     display: flex;
