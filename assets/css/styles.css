@@ -170,8 +170,10 @@ section h2 {
 
 .project-section {
     padding-left: 0;
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .project-section article {
@@ -210,11 +212,19 @@ section h2 {
     font-size: 24px;
     font-weight: bold;
     font-style: italic;
+    text-shadow: 0 0 1px;
     width: fit-content;
 }
 
 .project-section article div small {
     font-size: 12px;
+}
+
+@media only screen and (min-width: 1704.1px) {
+    .project-section article img:first-child {
+        max-width: 400px;
+        min-width: 200px;
+    }
 }
 
 @media only screen and (max-width: 1039.9px) {
