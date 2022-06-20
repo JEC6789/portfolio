@@ -47,6 +47,7 @@ header {
     top: 0;
     border-bottom: 2px ridge var(--tertiary-color);
     justify-content: space-between;
+    z-index: 9999;
 }
 
 header h1, section h2, footer h2 {
@@ -214,6 +215,12 @@ section h2 {
     font-style: italic;
     text-shadow: 0 0 1px;
     width: fit-content;
+    max-width: 448px;
+}
+
+.project-section article div.multiline {
+    bottom: 50px;
+    line-height: 0.8;
 }
 
 .project-section article div small {
@@ -276,6 +283,12 @@ section h2 {
 
     header li:not(li:first-child), footer li:not(li:first-child) {
         margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 499.9px) {
+    .project-section article div {
+        max-width: calc(100% - 10px);
     }
 }
 
