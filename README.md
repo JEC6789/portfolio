@@ -1,4 +1,4 @@
-# My Portfolio
+# My Portfolio v2
 ![screenshot of my portfolio](./assets/images/screenshot.png)
 
 ## Purpose
