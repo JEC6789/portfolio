@@ -7,19 +7,19 @@ import Resume from "./components/Resume";
 import Footer from "./components/Footer";
 
 function App() {
-    const [contactSelected, setContactSelected] = useState("about");
+    const [sectionSelected, setSectionSelected] = useState("about");
 
     return (
         <>
-            <Header contactSelected={contactSelected} setContactSelected={setContactSelected}></Header>
+            <Header sectionSelected={sectionSelected} setSectionSelected={setSectionSelected}></Header>
             <main>
                 {
                     (() => {
-                        if(contactSelected === "about") {
+                        if(sectionSelected === "about") {
                             return (
                                 <About></About>
                             );
-                        } else if(contactSelected === "projects") {
+                        } else if(sectionSelected === "projects") {
                             return (
                                 <section id="projects">
                                     <h2>Projects</h2>
@@ -28,11 +28,11 @@ function App() {
                                         </div>
                                 </section>
                             );
-                        } else if(contactSelected === "contact") {
+                        } else if(sectionSelected === "contact") {
                             return (
                                 <ContactForm></ContactForm>
                             );
-                        } else if(contactSelected === "resume") {
+                        } else if(sectionSelected === "resume") {
                             return (
                                 <Resume></Resume>
                             );
