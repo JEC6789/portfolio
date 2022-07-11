@@ -200,11 +200,6 @@ section h2 {
   border-radius: 2px;
 }
 
-.project-section article img:first-child {
-  width: 100%;
-  max-width: 914px;
-}
-
 .project-section article div {
   position: relative;
   left: 6px;
@@ -227,97 +222,124 @@ section h2 {
   font-size: 12px;
 }
 
-@media only screen and (min-width: 1704.1px) {
-  .project-section article img:first-child {
-      max-width: 400px;
-      min-width: 200px;
-  }
+form div {
+  display: flex;
+  flex-direction: column;
+  min-width: 360px;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+form button {
+  background: transparent;
+  border: 2px ridge var(--tertiary-color);
+  border-radius: 4px;
+  color: inherit;
+  font-size: inherit;
+  margin-bottom: 10px;
+  padding: 2px 4px;
+}
+
+.error-text {
+  color: #eeaaaa;
+  font-style: italic;
 }
 
 @media only screen and (max-width: 1039.9px) {
   .infobox {
-      float: none;
-      clear: none;
-      margin: 10px auto;
+    float: none;
+    clear: none;
+    margin: 10px auto;
   }
 }
 
 @media only screen and (max-width: 799.9px) {
   footer {
-      flex-direction: column;
+    flex-direction: column;
   }
 }
 
 @media only screen and (max-width: 767.9px) {
   section {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   section h2 {
-      padding: 5px 0;
-      margin: 0 auto;
-      border-right: none;
-      border-bottom: 2px solid var(--tertiary-color);
+    padding: 5px 0;
+    margin: 0 auto;
+    border-right: none;
+    border-bottom: 2px solid var(--tertiary-color);
+  }
+
+  form div:first-child {
+    margin-top: 10px;
   }
 }
 
 @media only screen and (max-width: 599.9px) {
   header {
-      flex-direction: column;
+    flex-direction: column;
   }
 }
 
 @media only screen and (max-width: 519.9px) {
   header ul, footer ul {
-      overflow: visible;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: center;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   header li:first-child, footer li:first-child {
-      list-style-type: disc;
+    list-style-type: disc;
   }
 
   header li:not(li:first-child), footer li:not(li:first-child) {
-      margin-left: 0;
+    margin-left: 0;
   }
 }
 
 @media only screen and (max-width: 499.9px) {
   .project-section article div {
-      max-width: calc(100% - 10px);
+    max-width: calc(100% - 10px);
+  }
+}
+
+@media only screen and (max-width: 405.9px) {
+  form div {
+    min-width: 0;
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 323.9px) {
   .infobox {
-      width: fit-content;
-      padding-top: 0;
+    width: fit-content;
+    padding-top: 0;
   }
 
   .infobox tr {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 
   section {
-      margin: 10px 10px 10px 0;
+    margin: 10px 10px 10px 0;
   }
 
   section h2 {
-      font-size: 48px;
+    font-size: 48px;
   }
 
   .project-section article {
-      margin-bottom: -32px;
+    margin-bottom: -32px;
   }
 
   .project-section article div {
-      font-size: 20px;
-      bottom: 32px;
-      height: 23.2px;
+    font-size: 20px;
+    bottom: 32px;
+    height: 23.2px;
   }
 }
