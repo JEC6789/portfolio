@@ -234,7 +234,7 @@ form button {
   background: transparent;
   border: 2px ridge var(--tertiary-color);
   border-radius: 4px;
-  color: inherit;
+  color: var(--tertiary-color);
   font-size: inherit;
   margin-bottom: 10px;
   padding: 2px 4px;
