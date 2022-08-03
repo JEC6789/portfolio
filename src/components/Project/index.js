@@ -57,6 +57,14 @@ function Project() {
             collab: true,
             languages: "Node / Express / WebSocket / JS",
             multiline: true
+        },
+        {
+            name: "Poke Fight (WIP)",
+            link: "https://github.com/acattet/Poke-Fight-",
+            imageType: "light",
+            collab: true,
+            languages: "MongoDB / Express / React / Node",
+            multiline: true
         }
     ]);
 
