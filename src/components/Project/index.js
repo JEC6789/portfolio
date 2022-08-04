@@ -59,7 +59,7 @@ function Project() {
             multiline: true
         },
         {
-            name: "Poke Fight (WIP)",
+            name: "Poke Fight",
             link: "https://github.com/acattet/Poke-Fight-",
             imageType: "light",
             collab: true,
